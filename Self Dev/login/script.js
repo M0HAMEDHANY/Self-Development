@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             console.log('Login successful');
             localStorage.setItem('currentUser', username);
-            window.location.href = '../Home/index.html';
+            window.location.href = '../index.html';
         }
     });
 
