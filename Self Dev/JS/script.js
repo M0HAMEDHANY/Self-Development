@@ -29,3 +29,4 @@ ScrollReveal().reveal('.content .image', { delay: 200, distance: '50px', origin:
 ScrollReveal().reveal('.content .text-box, .content .text', { delay: 200, distance: '50px', origin: 'right' });
 
 
+

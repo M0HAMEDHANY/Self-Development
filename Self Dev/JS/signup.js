@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!users[username]) {
             users[username] = password;
             localStorage.setItem('users', JSON.stringify(users));
-            window.location.href = '../login/login.html';
+            window.location.href = '../HTML/Login.html';
         } else {
             showModal('Username already exists');
         }
