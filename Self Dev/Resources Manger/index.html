@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Your Resources</title>
+    <link rel="icon" href="../Home/media/icons8-self-development-32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Home/style.css">
+</head>
+
+<body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+        
+                <div class="navPages">
+                    <a class="home-link" href="../Home/index.html">Home</a>
+                    <a href="../To Do List/index.html">To Do List</a>
+                    <a href="../Notes/index.html">Notes</a>
+                    <a href="../Pomodoro/index.html">Pomodoro</a>
+                    <a href="../Resources Manger/index.html">Resources Manager</a>
+                    <a href="../Quotes/index.html">Quotes</a>
+                </div>
+            </div>
+        </nav>
+    <div class="container">
+        <h1>Manage Your Resources</h1>
+        <form id="resource-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="launcher">Launcher:</label>
+            <input type="text" id="launcher" name="launcher" required /><br />
+
+            <label for="link">Link:</label>
+            <input type="url" id="link" name="link" required /><br />
+
+            <label for="tags">Tags (comma separated):</label>
+            <input type="text" id="tags" name="tags" /><br />
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea><br />
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Not Started">Not Started</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select><br />
+
+            <button type="submit">Add Resource</button>
+        </form>
+
+        <h2>Resources</h2>
+        <table id="resource-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Launcher</th>
+                    <th>Link</th>
+                    <th>Tags</th>
+                    <th>Notes</th>
+                    <th>Status</th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>    
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

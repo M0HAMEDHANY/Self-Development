@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Home/media/icons8-self-development-32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pomodoro</title>
+
+    <!---font--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!---icons--->
+    <script src="https://kit.fontawesome.com/e77aa6de5a.js" crossorigin="anonymous"></script>
+
+    <!---css--->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Home/style.css">
+
+</head>
+<body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+        
+                <div class="navPages">
+                    <a class="home-link" href="../Home/index.html">Home</a>
+                    <a href="../To Do List/index.html">To Do List</a>
+                    <a href="../Notes/index.html">Notes</a>
+                    <a href="../Pomodoro/index.html">Pomodoro</a>
+                    <a href="../Resources Manger/index.html">Resources Manager</a>
+                    <a href="../Quotes/index.html">Quotes</a>
+                </div>
+            </div>
+        </nav>
+    <section id="pomodoro">
+        <div class="container">
+            <h1>pomodoro</h1>
+            <div class="panel">
+                <p id="work" >work</p>
+                <p id="break">break</p>
+            </div>
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                <a id="reset" href="index.html"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!---script--->
+    <script src="script.js"></script>
+</body>
+</html>

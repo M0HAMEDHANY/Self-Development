@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.todo-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #27374D;
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 1000px;
+  background: #DDE6ED;
+  margin: 0px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.todo-app h2 {
+  color: #27374D;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #DDE6ED;
+  border-radius: 5px;
+  font-family: system-ui;
+  font-size: xx-large;
+}
+
+.todo-app h2 img {
+  width: 80px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fcfeff;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  text-align: left;
+
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  text-align: left;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #526D82;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+
+
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/checked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/OIP.jpeg);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #c5d9e9;
+
+
+}
+
+#input-box {
+  border: #27374D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.todo-app {
+  width: 100%;
+  max-width: 1000px;
+  background: #DDE6ED;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.todo-app h2 {
+  color: #27374D;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #DDE6ED;
+  border-radius: 5px;
+  font-family: system-ui;
+  font-size: xx-large;
+}
+
+.todo-app h2 img {
+  width: 80px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fcfeff;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  text-align: left;
+
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  text-align: left;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #526D82;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+
+
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/get-me-home/512/circle_circular_blank_check-512.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url("https://globaltravelsolutions.com.au/wp-content/uploads/2014/02/tick-the-box.png");
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #c5d9e9;
+
+
+}
+
+#input-box {
+  border: #27374D;
+}
+
+/* Add this CSS to your existing styles */
+@media screen and (max-width: 600px) {
+  .todo-app {
+    padding: 20px 10px 50px;
+  }
+
+  .todo-app h2 {
+    font-size: x-large;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 16px;
+    padding: 10px 8px 10px 40px;
+  }
+
+  ul li span {
+    font-size: 18px;
+  }
+}

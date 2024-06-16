@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #27374D;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: #27374D;
+}
+
+.quote-box {
+    background: #DDE6ED;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quote-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    color: #153448;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #153448;
+}
+
+.quote-box blockquote {
+    font-size: 1.2rem;
+    min-height: 110px;
+    color: #153448;
+    margin: 20px 0;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    color: #153448;
+    text-align: right;
+}
+
+#quoteList{
+    list-style: none;
+}
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quote-box button {
+    background: rgb(54, 170, 220);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(54, 170, 220);
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+    color: #333;
+}
+
+.head {
+    background: #DDE6ED;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.head h2 {
+    color: #153448;
+}
+
+.container1 {
+    background: #DDE6ED;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container1 input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container1 button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(54, 170, 220);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container1 h2 {
+    color: #153448;
+    padding: 10px 0;
+}
+
+.quote-item {
+    margin-bottom: 10px;
+    background-color: rgba(208, 212, 215, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #153448;
+}
+
+#delete-button {
+    width: 50px;
+    background-color: #bf0000;
+    color: white;
+    margin-left: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+
+    .container {
+        display:flex;
+        width: 100%;
+        margin: 0 auto;
+        /* Adjust the width for smaller screens */
+        padding: 10px;
+        /* Reduce padding */
+    }
+
+    .quote-box {
+        padding: 10px;
+        /* Reduce padding inside the quote box */
+        margin: 10px 0;
+        /* Adjust margin */
+    }
+
+    .quote-box h2 {
+        font-size: 1.2rem;
+        /* Reduce font size */
+    }
+
+    .quote-box blockquote {
+        font-size: 1rem;
+        /* Reduce font size */
+    }
+
+    .button-container {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        gap: 5px;
+        /* Reduce gap between buttons */
+    }
+
+    .quote-box button {
+        width: auto;
+        /* Adjust button width to fit content */
+        padding: 8px 10px;
+        /* Adjust padding */
+    }
+}

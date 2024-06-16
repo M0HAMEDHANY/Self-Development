@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <meta name="description"
+        content="Quotes are the advice from someone who has already lived and solved the same problem you are living">
+    <link rel="icon" href="../Home/media/icons8-self-development-32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Home/style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <div class="navPages">
+                    <a class="home-link" href="../Home/index.html">Home</a>
+                    <a href="../To Do List/index.html">To Do List</a>
+                    <a href="../Notes/index.html">Notes</a>
+                    <a href="../Pomodoro/index.html">Pomodoro</a>
+                    <a href="../Resources Manger/index.html">Resources Manager</a>
+                    <a href="../Quotes/index.html">Quotes</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="quote-box">
+                <h2>Quote of the day</h2>
+                <blockquote id="quote">Loading...</blockquote>
+                <span id="author">Loading...</span>
+                <div class="button-container">
+                    <button onclick="getquote(api_url);">New Quote</button>
+                    <button onclick="tweet()"><img src="twitter (1).png" alt="">Tweet</button>
+                    <button onclick="copyQuote()">Copy Quote</button>
+                </div>
+            </div>
+
+            <div class="head">
+                <h2>Your Favorite Quotes</h2>
+            </div>
+
+            <div class="container1">
+                <input type="text" id="quoteInput" placeholder="Enter a quote">
+                <button onclick="saveQuote()">Save Quote</button>
+                <h2>Saved Quotes:</h2>
+                <ul id="quoteList"></ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

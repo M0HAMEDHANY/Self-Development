@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Development</title>
+  <link rel="icon" href="./Home/media/icons8-self-development-32.png">
+  <link rel="stylesheet" href="./Home/style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+      </svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+
+      <div class="navPages">
+        <a class="home-link" href="index.html">Home</a>
+        <a href="./To Do List/index.html">To Do List</a>
+        <a href="./Notes/index.html">Notes</a>
+        <a href="./Pomodoro/index.html">Pomodoro</a>
+        <a href="./Resources Manger/index.html">Resources Manager</a>
+        <a href="./Quotes/index.html">Quotes</a>
+      </div>
+      <div class="auth-lnks">
+        <a class="auth-link" id="login-link" href="./login/login.html">Login</a>
+        <a class="auth-link" id="signup-link" href="./sign up/signup.html">Sign Up</a>
+        <a class="auth-link" id="logout-link" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+  
+
+
+  <main>
+    <section class="home-section">
+      <h1 class="home-title">Nothing Better Without Some Organize</h1>
+    </section>
+
+    <section class="sec-1">
+      <div class="container">
+        <h2 class="title">To Do List</h2>
+        <div class="content">
+          <div class="image">
+            <img src="./Home/media/todolist.png" alt="To Do List">
+          </div>
+          <div class="text-box">
+            <p>To Do Lists are essential for staying organized and productive. They help break down tasks into
+              manageable chunks,
+              keeping you focused on your goals and preventing overwhelm. By prioritizing tasks and providing a clear
+              plan of action,
+              To Do Lists enhance efficiency and reduce stress. Checking off completed tasks also provides a sense of
+              accomplishment,
+              motivating you to keep working towards your goals.</p>
+            <a href="./To Do List/index.html">View To Do List</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-2">
+      <div class="container">
+        <h2 class="title">Resources Manager</h2>
+        <div class="content">
+          <div class="image">
+            <img src="./Home/media/resourses.png" alt="Resources Manager">
+          </div>
+          <div class="text">
+            <p>A Resources Manager is an essential tool for efficiently managing various resources within an
+              organization. It helps
+              keep track of assets, personnel, budgets, and other resources, ensuring they are allocated effectively to
+              support the
+              organization's objectives. By centralizing resource management, it enables better planning, coordination,
+              and
+              utilization of available resources. This, in turn, leads to improved productivity, cost-efficiency, and
+              overall
+              performance
+            </p>
+            <a href="./Resources Manger/index.html">View Resources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sec-3">
+      <div class="container">
+        <h2 class="title">Notes</h2>
+        <div class="content">
+          <div class="image">
+            <img src="./Home/media/notes.png" alt="Notes">
+          </div>
+          <div class="text-box">
+            <p>Notes are incredibly useful for jotting down important information, ideas, and reminders. Whether you're
+              in a meeting, a
+              lecture, or just brainstorming, taking notes helps you retain information and stay organized. They serve
+              as a reference
+              point for recalling details later on, ensuring that nothing important is forgotten. Additionally, notes
+              can be easily
+              organized and categorized, making them a valuable tool for both personal and professional purposes.</p>
+            <a href="./Notes/index.html">View notes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-4">
+      <div class="container">
+        <h2 class="title">Pomodoro</h2>
+        <div class="content">
+          <div class="text">
+            <p>The Pomodoro Technique is a time management method that enhances productivity by breaking work into
+              intervals, typically
+              25 minutes long, separated by short breaks. Named after the tomato-shaped kitchen timer its creator used,
+              this technique
+              helps maintain focus, manage distractions, and improve efficiency. By dividing tasks into manageable
+              intervals, it
+              prevents burnout and ensures better concentration. After each Pomodoro interval, there's a short break,
+              usually around 5
+              minutes, with longer breaks scheduled after every four Pomodoros. This simple yet effective technique has
+              been widely
+              adopted for its ability to boost productivity
+            </p>
+            <a href="./Pomodoro/index.html">View Pomodoro</a>
+          </div>
+          <div class="image">
+            <img src="./Home/media/pomodoro.png" alt="Pomodoro">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-5">
+      <div class="container">
+        <h2 class="title">Quotes</h2>
+        <div class="content">
+          <div class="text-box">
+            <p>Quotes offer powerful motivation and guidance. Mark Twain once said, "The secret of getting ahead is
+              getting started,"
+              while Martin Luther King Jr. reminded us, "You don't have to see the whole staircase, just take the first
+              step." Winston
+              Churchill emphasized resilience, stating, "Success is not final, failure is not fatal: It is the courage
+              to continue
+              that counts." Steve Jobs highlighted the importance of passion, advising, "The only way to do great work
+              is to love what
+              you do." Mahatma Gandhi stressed the significance of our actions today, stating, "The future depends on
+              what you do
+              today." These quotes serve as powerful reminders of the importance of taking action, staying resilient,
+              and following
+              our passions</p>
+            <a href="./Quotes/index.html">View Quotes</a>
+          </div>
+          <div class="image">
+            <img src="./Home/media/quotes.png" alt="Notes">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+
+  <script src="./Home/script.js"></script>
+</body>
+
+</html>
