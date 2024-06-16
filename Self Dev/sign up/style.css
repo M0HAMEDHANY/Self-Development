@@ -133,3 +133,25 @@ a:hover {
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+
+@media (max-width: 480px) {
+    #container {
+        width: 80%;
+        /* Full width of the screen */
+        padding: 1rem;
+        /* Suitable padding */
+        box-sizing: border-box;
+        /* Includes padding in width calculation */
+    }
+
+    #container input[type="text"],
+    #container input[type="password"] {
+        width: calc(100% - 2rem);
+        /* Full width minus padding */
+    }
+
+    button {
+        width: 50%;
+        /* Full width button */
+    }
+}

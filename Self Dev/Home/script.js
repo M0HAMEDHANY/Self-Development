@@ -27,7 +27,5 @@ ScrollReveal().reveal('.home-title', { delay: 200, distance: '50px', origin: 'bo
 ScrollReveal().reveal('.title', { delay: 200, distance: '50px', origin: 'bottom' });
 ScrollReveal().reveal('.content .image', { delay: 200, distance: '50px', origin: 'left' });
 ScrollReveal().reveal('.content .text-box, .content .text', { delay: 200, distance: '50px', origin: 'right' });
-ScrollReveal().reveal('.auth-links a', { delay: 200, distance: '50px', origin: 'right' });
-
 
 
