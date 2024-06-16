@@ -1,5 +1,5 @@
 # Self Development Website
-![Screenshot 2024-06-15 213803](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/8f4261c6-04e1-4f0e-a9d1-99999bb8cf99)
+![Screenshot 2024-06-15 213803](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/4a00bb86-ce6a-4925-b6ab-8be7aa29aeea)
 
 
 Welcome to the Self Development website! This platform is designed to help you organize your daily life with various tools and resources. 
@@ -40,7 +40,7 @@ JavaScript is employed to manage the dynamic aspects of the website:
 
 
 ### TODO List
-![Screenshot 2024-06-15 214123](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/b57ed958-23bc-4883-bdd0-ef455250d2da)
+![Screenshot 2024-06-15 214123](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/7e3fb32d-539b-4c79-ad95-85d6313ac8e2)
 
   - **Add Tasks**: Easily add new tasks to your to-do list to track what needs to be done.
   - **Mark as Complete**: Check off tasks as you complete them to stay motivated and see your progress.
@@ -48,29 +48,31 @@ JavaScript is employed to manage the dynamic aspects of the website:
 
 
 ### Notes
-![Screenshot 2024-06-15 214417](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/39e55c60-98f8-41cb-8801-3265083e818e)
+![Screenshot 2024-06-15 214417](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/c08540ab-6fff-4adc-9c0b-493022c29a2b)
   - **Create Notes**: Write your thoughts, ideas, and important information in a structured format.
   - **Delete Notes**: Update or remove notes as your ideas evolve.
 
 ### Pomodoro
-![Screenshot 2024-06-15 214452](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/2b008dcb-8583-4b32-ba05-6e608adb4206)
+![Screenshot 2024-06-15 214452](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/e7f4b778-0e92-46c4-ad63-bd4727b4a695)
   - **Timer**: Use the Pomodoro technique to break work into intervals (typically 25 minutes), separated by short breaks.
   - **Track Work and Break Periods**: Monitor your work sessions and breaks to ensure balanced productivity.
 
 ### Resources Manager
-![Screenshot_15-6-2024_215330_](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/52b1903a-6954-41d5-aca6-b2d6cce5a49d)
+![Screenshot_15-6-2024_215330_](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/13dffde6-ce55-43ef-b3df-d1b43bc66f50)
+
   - **Add Resources**: Keep track of various resources such as links, documents, and tools.
   - **Categorize Resources**: Organize resources into different categories for easy management and many fields like links and status.
 
 ### Quotes 
-![Screenshot_15-6-2024_215345_](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/c50dcc61-32de-4098-b098-7fd1ea557b03)
+![image](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/2d9730d3-4181-4272-b2b9-c3cc0677dde2)
+
   - **Daily Motivational Quotes**: Receive a new inspirational quote each day to keep you motivated.
   - **Browse Quotes**: Explore a collection of motivational quotes to find inspiration whenever you need it.
   - **Save Favorite Quotes**: Mark quotes as favorites to easily access them later.
 
 ## Registration methods 
 #### login 
-![Screenshot_15-6-2024_215412_](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/1c3c3766-2b1e-481b-82b8-c006c9c3d75f)
+![image](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/96e2bb92-72b5-41a6-b2e1-835bb2434af3)
 
   - login functionality with local storage displays error messages in a modal if the login fails, and adds scroll-based animations to elements on the page using the ScrollReveal library.
   - check if the username in the local storage or not.
@@ -78,7 +80,7 @@ JavaScript is employed to manage the dynamic aspects of the website:
   - Providing user feedback through modal dialogs and enhancing the user interface with animations.
 
 #### sign up
-![Screenshot_15-6-2024_215439_](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/a817f47d-18cb-4f4d-bbf6-53c4000eeb8b)
+![image](https://github.com/mohameddhanyyy/Self-Development/assets/130695667/db0aab77-bebf-4dcc-b495-4b6427de1068)
 
   - Validating the username and password format.
   - Ensuring the username is unique.
